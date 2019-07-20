@@ -1,0 +1,71 @@
+.DashboardProfilePictureWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DashboardProfilePicture {
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.ProfileContent {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+
+  img {
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.ChangeGravatar {
+  transition: opacity .2s ease-in-out;
+  background-color: rgba(32, 33, 36, 0.6);
+  bottom: 0;
+  height: 33%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  div {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB70lEQVRoge2Yz0oCQQCHN0V8h4ylLuE9L0bQE0TQXwSFugVCnXqCLl56CDGKhDB7HgnsAUJSyujP12FWmKZVZ3RtFpwP9iLz2/l9y8zuup7ncDimBjjHnHPbvT3P8zzgeILyAN/Ake3y28DnhAIAH8CWrfKbwNsU5Qe8AhtRl8sC98BLBAWnpQc8AFmT8h27nUPpoCOBuPJxpakjEIdlM4yujkCscQJj6ANVYAfwgVRw+MFvtWBMLAVugEWN82eAepwEvoCTsSf+O085yFoX+FMeSALriPekYyAPJIdIWBW4UbILQAl4ChnbBgoh8xktpygF+khrPih/qZGrKPMtAe82BKpKrmSQPVCyVzYEdqRMkvBlM4xHICHl92wI+FJm3SA3ICfll3VDUQqkpMwk/8qKUj6tG3ICEvISyhvXhzUpv6IbilJA3cRtg2yL35t434ZATckVDLK7SvbahkAfyCjZikbuQsn4WHqQAdyG5A8R93mVFsqVD8bfmUwYtQBAOeQcCSAHFINjDWnNS+NOTSebhcBXmITGPGfE5HV6QB1Y0ji/j+Gy+S8BEJvxCvFus4x4QKUR9/l9xN1Ge8PaEJg5cyHQs11yBFofth5stxxBQ0cgrh93n4HVsQKSRBPo2u0MiA4NdMs7HA6HY674AcVRw/E55G45AAAAAElFTkSuQmCC");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    height: 100%;
+    opacity: .8;
+    cursor: pointer;
+  }
+}
+
+.GreetingsMessage {
+  text-align: center;
+  font-size: 1.1rem;
+
+  &:not(.NoMargin) {
+    margin-top: 2rem;
+  }
+
+  .Username {
+    font-weight: bold;
+  }
+}

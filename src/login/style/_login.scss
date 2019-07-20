@@ -1,0 +1,73 @@
+@media (max-width: 66rem) {
+  .login-pf-page.bx--content {
+    padding: 0;
+
+    .bx--tile {
+      background-color: transparent;
+    }
+  }
+}
+
+.login-pf {
+  .bx--tile {
+    background-color: #FFF;
+  }
+}
+
+body, .bx--content {
+  background-color: #f3f3f3;
+
+  @media (max-width: 66rem) {
+    background-color: transparent;
+
+    .FixedLanguageSelect {
+      .bx--select, select {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.login-pf-page.bx--content {
+
+  .bx--form-item {
+    margin-bottom: .5rem;
+  }
+
+  .bx--tile {
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 1.1rem;
+
+    &.bx--wide {
+      max-width: none;
+    }
+  }
+
+  .login-pf-settings {
+    > * {
+      margin-bottom: .4rem;
+    }
+  }
+}
+
+.page-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+
+#kc-form-buttons {
+  margin-top: .4rem;
+}
+
+.DisplayFlex {
+  display: flex;
+
+  .FillFlex {
+    flex-grow: 1;
+  }
+}

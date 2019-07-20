@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  keycloak:
+    image: jboss/keycloak:latest
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./carbon/:/opt/jboss/keycloak/themes/carbon/
+    environment:
+      KEYCLOAK_PASSWORD: "admin"
+      KEYCLOAK_USER: "admin"
+      PROXY_ADDRESS_FORWARDING: "true"

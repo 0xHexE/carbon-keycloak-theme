@@ -1,0 +1,73 @@
+.CardList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1.5rem;
+
+  @media (max-width: 399px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 400px) and (max-width: 599px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 600px) and (max-width: 1099px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1100px) and (max-width: 1399px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .Card {
+    padding: 1.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    min-height: 6rem;
+    transition: all 0.125s ease-in-out, transform 0.125s ease-in-out;
+    flex-direction: column;
+    user-select: none;
+    text-decoration: none;
+
+    span {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .Icon {
+      margin-bottom: 1rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+  }
+}
+
+.FlexLayout, .FlexDisplay, .DisplayFlex {
+  display: flex;
+
+  @media (min-width: 66rem) {
+    > * {
+      margin-right: .4rem;
+    }
+  }
+
+
+  @media (max-width: 66rem) {
+    flex-direction: column;
+    > * {
+      margin-bottom: .8rem;
+    }
+  }
+}
