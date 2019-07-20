@@ -8,7 +8,7 @@ const Dotenv = require('dotenv-webpack');
 const commonConfig = (entryPoint) => ({
     entry: `./src/${entryPoint}/index.ts`,
     resolve: {
-        extensions: ['.ts', '.tsx', '.js']
+        extensions: ['.ts', '.js']
     },
     module: {
         rules: [
@@ -69,7 +69,7 @@ const commonConfig = (entryPoint) => ({
     plugins: [
         new CleanWebpackPlugin(),
         new webpack.BannerPlugin({
-            banner: () => `Copyright ${new Date().getFullYear()}`,
+            banner: () => `F4ERP Copyright ${new Date().getFullYear()}`,
         }),
         new webpack.EnvironmentPlugin({}),
         new Dotenv(),

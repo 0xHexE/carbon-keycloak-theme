@@ -7,4 +7,4 @@ for (const config of devConfig) {
   config.plugins.push(new UglifyJSPlugin());
 }
 
-app.exports = devConfig;
+module.exports = devConfig;
