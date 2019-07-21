@@ -24,11 +24,11 @@
                             <#if usernameEditDisabled??>
                                 <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username"
                                        value="${(login.username!'')}" type="text" disabled
-                                       placeholder="<#if !realm.loginWithEmailAllowed>${msg("username")} <#elseif !realm.registrationEmailAsUsername> ${msg("usernameOrEmail")} <#else> ${msg("email")} </#if>"/>
+                                       placeholder="<#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if>"/>
                             <#else>
                                 <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username"
                                        value="${(login.username!'')}" type="text" autofocus
-                                       placeholder="<#if !realm.loginWithEmailAllowed>${msg("username")} <#elseif !realm.registrationEmailAsUsername> ${msg("usernameOrEmail")} <#else> ${msg("email")} </#if>" autocomplete="off"/>
+                                       placeholder="<#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if>" autocomplete="off"/>
                             </#if>
                         </div>
 

@@ -3,3 +3,4 @@
 .sonarlint
 .idea
 .docker-compose
+helm
