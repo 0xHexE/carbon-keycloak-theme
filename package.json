@@ -51,7 +51,7 @@
     "autofill-event": "0.0.1",
     "blueimp-md5": "^2.12.0",
     "carbon-components": "^10.9.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "select2": "^4.0.13"
   }
 }
