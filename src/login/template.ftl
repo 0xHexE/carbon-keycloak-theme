@@ -50,7 +50,7 @@
     </header>
 
     <div class="${properties.kcLoginClass!} bx--content" id="main-content">
-        <div class="${properties.kcFormCardClass!} form-card bx--tile <#if displayWide>${properties.kcFormCardAccountClass!} bx--wide</#if>">
+        <div class="${properties.kcFormCardClass!} form-card bx--tile <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
             <header class="${properties.kcFormHeaderClass!}">
                 <h1 id="kc-page-title" class="page-title"><#nested "header"></h1>
             </header>
